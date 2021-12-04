@@ -2,17 +2,18 @@
   padding: 0;
   margin: 0;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* padding:0px 4%; */
 }
+
 .logo {
   display: flex;
   padding: 0px 2%;
 }
 
-img {
+.logoImg {
   animation: spin 5s infinite linear;
 }
 
@@ -52,7 +53,6 @@ img {
 }
 .menuBar h2 {
   display: none;
-  
 
   /* padding-right:; */
 }
@@ -61,15 +61,14 @@ img {
 }
 .menuBar:hover {
   background-color: #292c2f;
-  
 }
 
 @media only screen and (min-width: 768px) {
   .menuBar {
     width: 12%;
   }
-  .menuBar h2{
-    display:block;
+  .menuBar h2 {
+    display: block;
     color: white;
     font-weight: 400;
   }

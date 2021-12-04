@@ -1,0 +1,22 @@
+.homeCard { 
+  width: 10%;
+  max-width: 720px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  animation: animate 0.5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeCard:hover {
+  opacity: 0.8;
+}
+
+.thumb {
+  width: 100%;
+  max-width: 720px;
+  transition: all 0.3s;
+  object-fit: cover;
+  border-radius: 5px;
+}
