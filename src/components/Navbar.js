@@ -11,7 +11,7 @@ const Navbar = (props) => {
         </ul>
       </div>
       <div className={classes.menuBar}>
-        <span class="material-icons" style={{ color: "white",fontSize:"35px" }}>
+        <span className="material-icons" style={{ color: "white",fontSize:"35px" }}>
           clear_all
         </span>
         <h2>Menu</h2>

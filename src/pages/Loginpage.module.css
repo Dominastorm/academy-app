@@ -4,22 +4,44 @@
     flex-direction: column;
     align-items: center;
     
+    
 }
 .content h1{
-    text-align: center;
+    /* text-align: center; */
     color:#434545;
 }
 .card {
     display: flex;
     flex-direction: column;
     height:300px;
-    padding:30px 2%;
+    padding:0px 2%;
     margin-top: 50px;
     width:40%;
     
     
+    
     align-items: start;
-    /* justify-content: center; */
+    justify-content: space-evenly;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+}
+.text span{
+    color:#434545;
+    font-weight: 500;
+}
+.signIn{
+    width:60%;
+    align-self: center;
+    height:30px;
+    border-radius:20px;
+    /* background-color:chartreuse */
+    /* background-color: red; */
+    /* background-image: linear-gradient(to right, red , yellow); */
+    background-color:linear-gradient(to right,green,chartreuse);
 }

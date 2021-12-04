@@ -1,4 +1,36 @@
+*{
+    padding:0;
+    margin:0;
+}
 .textfield{
     display: flex;
+    outline:solid 1px;
+    width:95%;
+    height:40px;
+    align-items:center;
+    gap:10px;
+    padding-left:10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
+
+.textfield input {
+    /* border-width: 0px; */
+    border:none;
+    outline: 0px;
+    border-left:1px solid gray;
+
+    padding-left:10px;
+    font-size: 20px;
+    width:80%;
+    
+    
+}
+.textfield input:focus{
+    border:none;
+    outline:0px;
+    border-left:1px solid;
+    /* background-color:red; */
+    /* border-width: 0px; */
+}
+
