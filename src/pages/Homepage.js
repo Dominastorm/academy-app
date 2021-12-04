@@ -6,6 +6,7 @@ const Homepage=props=>{
         <div>
             <Navbar/>
             
+            
         </div>
     )
 }

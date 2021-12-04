@@ -1,4 +1,4 @@
-import Textfield from "../../components/Textfield/Textfield";
+import Textfield from "../components/Textfield";
 import classes from "./Loginpage.module.css";
 
 const Loginpage = (props) => {
