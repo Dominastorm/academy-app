@@ -1,5 +1,5 @@
 import Homepage from "./pages/Homepage";
-import Loginpage from "./pages/Loginpage";
+import Loginpage from "./pages/Loginpage/Loginpage";
 
 const App = () => {
   return (
