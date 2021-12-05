@@ -52,28 +52,3 @@
         height: 40%;
     }
 }
-.text{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    width:100%;
-}
-.text span{
-    color:#434545;
-    font-weight: 500;
-}
-.signIn{
-    width:60%;
-    align-self: center;
-    height:40px;
-    border: none;
-    border-radius:20px;
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color:white;
-    background: linear-gradient(to right,green, chartreuse);
-    font-weight: 500;
-    font-size: 18px;
-}
-.signIn:hover{
-    opacity:0.8;
-}
