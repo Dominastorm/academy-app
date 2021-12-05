@@ -1,0 +1,21 @@
+.grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+ 
+.grid h1 {
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+    font-size: var(--fontBig);
+   }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}

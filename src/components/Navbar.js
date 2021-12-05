@@ -1,5 +1,5 @@
 import classes from "./Navbar.module.css";
-import logo from "../peslogo.png";
+import logo from "../assets/peslogo.png";
 const Navbar = (props) => {
   return (
     <div className={classes.navbar}>
