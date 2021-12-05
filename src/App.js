@@ -5,7 +5,7 @@ import CoursePage from "./pages/CoursePage";
 const App = () => {
   return (
     <div>
-    <CoursePage />
+      <CoursePage />
       {/* <Homepage /> */}
       {/* <Loginpage/> */}
     </div>
