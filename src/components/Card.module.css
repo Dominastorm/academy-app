@@ -1,7 +1,7 @@
-.homeCard { 
+.Card { 
   display: flex;
   background-color: gray;
-  /* height: 100%; */
+  height: 100%;
   /* max-width: 720px; */
   transition: all 0.3s;
   border-radius: 15px;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.homeCard:hover {
+.Card:hover {
   opacity: 0.8;
 }
 

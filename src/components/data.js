@@ -2,22 +2,27 @@ const homeData = [
   {
     thumb: "courses.webp",
     heading: "Courses",
+    path: "coursepage",
   },
   {
     thumb: "timeTable.jpeg",
     heading: "Time Table",
+    path: "coursepage",
   },
   {
     thumb: "attendance.jpg",
     heading: "Attendance",
+    path: "coursepage",
   },
   {
     thumb: "announcements.jpeg",
     heading: "Announcements",
+    path: "coursepage",
   },
   {
     thumb: "results.jpeg",
     heading: "Results",
+    path: "coursepage",
   },
 ];
 
