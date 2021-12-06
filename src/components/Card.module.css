@@ -1,6 +1,6 @@
 .Card { 
   display: flex;
-  background-color: gray;
+  background-color: #000000; 
   height: 100%;
   /* max-width: 720px; */
   transition: all 0.3s;
@@ -30,8 +30,8 @@
   border-radius: 5px;
 }
 
-.title {
-  color: black;
+.heading {
+  color: #979dac;
 }
 
 .subheading {

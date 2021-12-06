@@ -17,6 +17,10 @@ const App = () => {
         <Route path="/timetablepage" element={<TimeTablePage />} />
         <Route path="/loginpage" element={<Loginpage />} />
         <Route path="/cs201" element={<SubjectPage />} />
+        <Route path="/cs202" element={<SubjectPage />} />
+        <Route path="/cs203" element={<SubjectPage />} />
+        <Route path="/cs204" element={<SubjectPage />} />
+        <Route path="/cs205" element={<SubjectPage />} />
       </Routes>
     </div>
   );

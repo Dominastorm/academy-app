@@ -1,6 +1,6 @@
 const homeData = [
   {
-    thumb: "courses.webp",
+    thumb: "courses.jpeg",
     heading: "Courses",
     path: "coursepage",
   },
@@ -10,7 +10,7 @@ const homeData = [
     path: "timetablepage",
   },
   {
-    thumb: "attendance.jpg",
+    thumb: "attendance.jpeg",
     heading: "Attendance",
     path: "coursepage",
   },
@@ -30,7 +30,7 @@ export default homeData;
 
 const subData = [
   {
-    thumb: "cs201.jpg",
+    thumb: "cs201.jpeg",
     heading: "Digital Design and Computer Organization",
     subheading: "CS201",
     path: "cs201",
@@ -43,7 +43,7 @@ const subData = [
     ],
   },
   {
-    thumb: "cs202.png",
+    thumb: "cs202.jpeg",
     heading: "Data Structures and Applications",
     subheading: "CS202",
     path: "cs202", 
@@ -56,16 +56,16 @@ const subData = [
     ]
   },
   {
-    thumb: "cs203.png",
+    thumb: "cs203.jpeg",
     heading: "Statistics for Data Science",
     subheading: "CS203",
     path: "cs203", 
     units: [
-      "",
-      "",
-      "",
-      "",
-      "",
+      "Introduction to Data Science, Statistics and Data Visualization",
+      "Random Variables and Probability Distributions",
+      "Probability Distributions and Confidence Intervals",
+      "Hypothesis and Inference",
+      "Power of Test",
     ]
   },
   {
@@ -82,7 +82,7 @@ const subData = [
     ]
  },
   {
-    thumb: "cs205.jpg",
+    thumb: "cs205.jpeg",
     heading: "Automata Formal Language and Logic",
     subheading: "CS205",
     path: "cs205", 

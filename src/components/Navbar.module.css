@@ -4,6 +4,7 @@
 }
 
 .navbar {
+  background-color: #000000;
   display: flex;
   justify-content: space-between;
 }
@@ -18,7 +19,7 @@
 .menuBar {
   display: flex;
   align-items: start;
-  background-color: #0e0e0e;
+  background-color: #001233;
   width: 20%;
   gap: 2%;
   align-items: center;
