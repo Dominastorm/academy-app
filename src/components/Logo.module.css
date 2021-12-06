@@ -1,0 +1,38 @@
+.container {
+    padding: 10px;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container ul :first-child {
+  font-weight: bold;
+  font-size: 50px;
+  color: #3c3085;
+}
+.container ul :nth-child(2) {
+  font-size: 25px;
+  color: #d62330;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  padding: 0px 2%;
+}
+
+.logoImg {
+  animation: spin 5s infinite linear;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

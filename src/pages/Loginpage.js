@@ -1,16 +1,17 @@
 import Textfield from "../components/Textfield";
 import React from "react";
 import classes from "./Loginpage.module.css";
+import Logo from "../components/Logo";
 
 const Loginpage = (props) => {
   return (
     <div className={classes.content}>
-      <h1>Good to see you again</h1>
+      <Logo />
+      {/* <h1>Good to see you again</h1> */}
       <div className={classes.card}>
-        
         <div className={classes.text}>
           <span>Your email</span>
-          
+
           <Textfield
             icon="person"
             custom={{ type: "email", placeholder: "elon@email.com" }}
@@ -19,7 +20,6 @@ const Loginpage = (props) => {
         <div className={classes.text}>
           <span>Your password</span>
           <Textfield
-            
             icon="lock_open"
             custom={{ type: "password", placeholder: "elon123" }}
           />
@@ -29,4 +29,4 @@ const Loginpage = (props) => {
     </div>
   );
 };
-export default Loginpage
+export default Loginpage;
