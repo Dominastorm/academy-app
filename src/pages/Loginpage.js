@@ -7,7 +7,6 @@ const Loginpage = (props) => {
   return (
     <div className={classes.content}>
       <Logo />
-      {/* <h1>Good to see you again</h1> */}
       <div className={classes.card}>
         <div className={classes.text}>
           <span>Your email</span>

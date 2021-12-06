@@ -23,7 +23,7 @@
 }
 
 .logoImg {
-  animation: spin 5s infinite linear;
+  animation: spin 2s infinite linear;
   width: 100px;
   height: 100px;
 }
