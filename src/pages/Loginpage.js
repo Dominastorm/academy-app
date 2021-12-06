@@ -1,4 +1,5 @@
 import Textfield from "../components/Textfield";
+import React from "react";
 import classes from "./Loginpage.module.css";
 
 const Loginpage = (props) => {
@@ -11,7 +12,6 @@ const Loginpage = (props) => {
           <span>Your email</span>
           
           <Textfield
-           
             icon="person"
             custom={{ type: "email", placeholder: "elon@email.com" }}
           />

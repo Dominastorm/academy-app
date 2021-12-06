@@ -7,7 +7,7 @@ const homeData = [
   {
     thumb: "timeTable.jpeg",
     heading: "Time Table",
-    path: "coursepage",
+    path: "timetablepage",
   },
   {
     thumb: "attendance.jpg",

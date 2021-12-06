@@ -4,8 +4,6 @@ import Card from "../components/Card";
 import classes from "./Homepage.module.css";
 import Grid from "../components/Grid";
 import homeData from "../components/data";
-import { Route, Navigate } from "react-router-dom";
-
 
 const Homepage = (props) => {
   return (
@@ -14,7 +12,8 @@ const Homepage = (props) => {
       <Grid header="Home">
         {homeData.map((obj) => (
           <Card
-            thumb={require(`../assets/${obj.thumb}`).default}
+            key={obj.thumb}
+            thumb={require(`../assets/${obj.thumb}`)}
             heading={obj.heading}
             path={obj.path}
           />

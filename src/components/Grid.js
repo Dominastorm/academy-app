@@ -1,5 +1,4 @@
 import React from "react";
-import HomeCard from "./Card";
 import classes from "./Grid.module.css";
 
 const Grid = (props) => (

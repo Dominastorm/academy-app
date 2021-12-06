@@ -12,7 +12,7 @@ const CoursePage = (props) => {
       <Grid header="Courses">
         {subData.map((obj) => (
           <Card
-            thumb={require(`../assets/${obj.thumb}`).default}
+            thumb={require(`../assets/${obj.thumb}`)}
             heading={obj.heading}
             subheading={obj.subheading}
           />
