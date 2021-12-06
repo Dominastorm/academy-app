@@ -17,6 +17,10 @@
   opacity: 0.8;
 }
 
+.Card:hover .thumb {
+  transform: scale(1.02);
+}
+
 .thumb {
   display: block;
   margin-top: 5px;
