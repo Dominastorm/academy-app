@@ -26,9 +26,7 @@
 }
 
 .Card:hover .thumb {
-  transform: scale(1.2);
-  height: 80%;
-  /* height: 20; */
+  transform: scale(1.02);
 }
 
 .thumb {

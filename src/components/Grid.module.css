@@ -5,9 +5,10 @@
 }
 
 .grid h1 {
-  color: #7d8597;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    color: #7d8597;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
 
   @media screen and (max-width: 768px) {
   }
