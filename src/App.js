@@ -8,8 +8,11 @@ import SubjectPage from "./pages/SubjectPage";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 const App = () => {
+  console.log("WE ARE IN APP");
+  const loginStatus = localStorage.getItem("loggedIn");
   return (
     <div>
+
       <Routes>
         <Route path="/" element={<Navigate to="/loginpage" />} />
         <Route path="/homepage" element={<Homepage />} />
@@ -22,6 +25,7 @@ const App = () => {
         <Route path="/cs204" element={<SubjectPage />} />
         <Route path="/cs205" element={<SubjectPage />} />
       </Routes>
+
     </div>
   );
 };

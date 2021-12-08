@@ -6,9 +6,12 @@ import { baseUrl } from "../components/data";
 import { Link,Navigate } from "react-router-dom";
 
 const Loginpage = (props) => {
+  const loginCookie=localStorage.getItem('loggedIn');
+  
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState("0");//0 is inital state 1 is incorrect password and 2 is succesfully logged in
+  
   const usernameHandler = (event) => {
     setUsername(event.target.value);
   };
@@ -33,10 +36,11 @@ const Loginpage = (props) => {
 
       const data = await response.json();
       if (response.status !== 401) {
-        setLoggedIn(true);
+        setLoggedIn("2");
+        localStorage.setItem("loggedIn",true);
         
       } else {
-        console.log("Invalid creds");
+        setLoggedIn("1");
         
       }
     } catch (e) {
@@ -47,7 +51,7 @@ const Loginpage = (props) => {
   return (
     <div className={classes.content}>
       <Logo />
-      {loggedIn && <Navigate to="/homepage"/>}
+      {(loggedIn==="2" || loginCookie) && <Navigate to="/homepage"/>}
       <form className={classes.card}>
         <div className={classes.text}>
           <span>Your Username</span>
@@ -66,6 +70,7 @@ const Loginpage = (props) => {
             onChange={passwordHandler}
           />
         </div>
+        {loggedIn==="1" && <p style={{color:"red"}}>Incorrect Username or password</p>}
         <button
           className={classes.signIn}
           onClick={signInHandler}
@@ -73,6 +78,7 @@ const Loginpage = (props) => {
         >
           Sign in
         </button>
+
       </form>
     </div>
   );
