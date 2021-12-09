@@ -15,7 +15,7 @@ const CoursePage = (props) => {
             thumb={require(`../assets/${obj.thumb}`)}
             heading={obj.heading}
             subheading={obj.subheading}
-            path={obj.path}
+            path={`coursepage/${obj.path}`}
           />
         ))}
       </Grid>

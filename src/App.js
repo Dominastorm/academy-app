@@ -8,6 +8,7 @@ import SubjectPage from "./pages/SubjectPage";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 const App = () => {
+  const subPaths = ["cs201", "cs202", "cs203", "cs204", "cs205"];
   return (
     <div>
       <Routes>
@@ -16,11 +17,10 @@ const App = () => {
         <Route path="/coursepage" element={<CoursePage />} />
         <Route path="/timetablepage" element={<TimeTablePage />} />
         <Route path="/loginpage" element={<Loginpage />} />
-        <Route path="/cs201" element={<SubjectPage />} />
-        <Route path="/cs202" element={<SubjectPage />} />
-        <Route path="/cs203" element={<SubjectPage />} />
-        <Route path="/cs204" element={<SubjectPage />} />
-        <Route path="/cs205" element={<SubjectPage />} />
+        {subPaths.map((sub) => (
+          <Route path={`/coursepage/${sub}`} element={<SubjectPage />} />
+        ))}
+        ;
       </Routes>
     </div>
   );

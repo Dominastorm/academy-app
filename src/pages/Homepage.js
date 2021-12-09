@@ -12,7 +12,7 @@ const Homepage = (props) => {
       <Grid header="Home">
         {homeData.map((obj) => (
           <Card
-            key={obj.thumb}
+            // key={obj.thumb}
             thumb={require(`../assets/${obj.thumb}`)}
             heading={obj.heading}
             path={obj.path}

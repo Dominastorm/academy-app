@@ -6,9 +6,8 @@ import Grid from "../components/Grid";
 import { subData } from "../components/data";
 
 const SubjectPage = (props) => {
-  // console.log(window.location.pathname);
-  const [data] = subData.filter(obj => '/coursepage/'+obj.path === window.location.pathname);
-  console.log(data.heading);
+  console.log(window.location.pathname);
+  const [data] = subData.filter(obj => '/'+obj.path === window.location.pathname);
   return (
     <div>
       <Navbar />
@@ -27,4 +26,5 @@ const SubjectPage = (props) => {
   );
 };
 
-export default SubjectPage;
+export default UnitPage;
+

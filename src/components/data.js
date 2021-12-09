@@ -96,4 +96,22 @@ const subData = [
   },
 ];
 
+const unitData = [
+  {
+    thumb: "avsumnmary.jpeg",
+    heading: "AV Summary",
+    path: "avsumamary"
+  },
+  {
+    thumb: "notes.jpeg",
+    heading: "Notes",
+    path: "notes"
+  },
+  {
+    thumb: "slides.jpeg",
+    heading: "Slides",
+    path: "slides"
+  }
+]
+
 export { homeData, subData };
