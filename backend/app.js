@@ -7,7 +7,6 @@ dotenv.config();
 
 //its a class hence its Joi and not joi
 
-const { Mongoose } = require("mongoose");
 app.use(express.json());
 //to prevent frontend
 const corsOptions ={

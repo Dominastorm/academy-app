@@ -6,6 +6,7 @@ const Class = require("../models/Class");
 router.get("/:classId", async (req, res) => {
   try {
     const _class = await Class.find({classId:req.params.classId});
+    // console.log(req.params.classId)
     res.json(_class);
   } catch (e) {
     res.send(e);
