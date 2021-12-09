@@ -7,7 +7,7 @@ const Textfield = props => {
       <i className="material-icons" style={{ color: "#434545", fontSize: "25px" }}>
         {props.icon}
       </i>
-      <input {...(props.custom)}></input>
+      <input {...(props.custom)} onChange={props.onChange}></input>
     </div>
   );
 };

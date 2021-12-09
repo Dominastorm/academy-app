@@ -1,3 +1,4 @@
+const baseUrl="http://localhost:4000";
 const homeData = [
   {
     thumb: "courses.jpeg",
@@ -114,4 +115,4 @@ const unitData = [
   }
 ]
 
-export { homeData, subData, unitData };
+export { homeData, subData, unitData, baseUrl };

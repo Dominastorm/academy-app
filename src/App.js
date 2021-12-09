@@ -13,8 +13,10 @@ import { Route, Routes, Navigate } from "react-router-dom";
 const App = () => {
   const subPaths = ["cs201", "cs202", "cs203", "cs204", "cs205"];
   const unitPaths = ["unit1", "unit2", "unit3", "unit4", "unit5"];
+  const loginStatus = localStorage.getItem("loggedIn");
   return (
     <div>
+
       <Routes>
         {/* <Route path="/" element={<Navigate to="/homepage" />} /> */}
         <Route path="/homepage" element={<Homepage />} />
@@ -35,6 +37,7 @@ const App = () => {
         <Route path="/slides" element={<SlidesPage />} />
         <Route path="/notes" element={<NotesPage />} />
       </Routes>
+
     </div>
   );
 };
