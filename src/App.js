@@ -16,9 +16,8 @@ const App = () => {
   const loginStatus = localStorage.getItem("loggedIn");
   return (
     <div>
-
       <Routes>
-        {/* <Route path="/" element={<Navigate to="/homepage" />} /> */}
+        <Route path="/" element={<Navigate to="/loginpage" />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/coursepage" element={<CoursePage />} />
         <Route path="/timetablepage" element={<TimeTablePage />} />

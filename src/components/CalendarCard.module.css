@@ -1,0 +1,9 @@
+.calendar {
+    justify-content: center;
+    text-align: center;
+}
+
+.calendar p {
+    align-self: center;
+    color: red;
+}
