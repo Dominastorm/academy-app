@@ -5,9 +5,9 @@ import Grid from "../components/Grid";
 
 import { subData } from "../components/data";
 
-const SubjectPage = (props) => {
+const UnitPage = (props) => {
   console.log(window.location.pathname);
-  const [data] = subData.filter(obj => '/'+obj.path === window.location.pathname);
+  const [data] = subData.filter(obj => '/coursepage/'+obj.path === window.location.pathname);
   return (
     <div>
       <Navbar />
@@ -17,7 +17,7 @@ const SubjectPage = (props) => {
               thumb={require(`../assets/${data.thumb}`)}
               heading={ele}
               subheading={"Unit " + (data.units.indexOf(ele) + 1)}
-              path={data}
+              path={data.path}
             />
           ))}
         </Grid>
