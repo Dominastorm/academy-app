@@ -4,4 +4,4 @@ The current website pesuacademy.com looks very cluttered, so we decided to make 
 
 There are a lot of features yet to be added. Make sure to check out the current version!!
 
-pesuportal.netlify.app
+https://pesuportal.netlify.app
