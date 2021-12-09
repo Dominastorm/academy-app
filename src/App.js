@@ -5,6 +5,8 @@ import CoursePage from "./pages/CoursePage";
 import TimeTablePage from "./pages/TimeTablePage";
 import SubjectPage from "./pages/SubjectPage";
 import UnitPage from "./pages/UnitPage";
+import SlidesPage from "./pages/SlidesPage";
+import NotesPage from "./pages/NotesPage";
 
 import { Route, Routes, Navigate } from "react-router-dom";
 
@@ -14,7 +16,7 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Navigate to="/homepage" />} />
+        {/* <Route path="/" element={<Navigate to="/homepage" />} /> */}
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/coursepage" element={<CoursePage />} />
         <Route path="/timetablepage" element={<TimeTablePage />} />
@@ -26,10 +28,12 @@ const App = () => {
           unitPaths.map((unit) => (
             <Route
               path={`coursepage/${sub}/${unit}`}
-              element={<Homepage />}
+              element={<UnitPage />}
             />
           ))
         )}
+        <Route path="/slides" element={<SlidesPage />} />
+        <Route path="/notes" element={<NotesPage />} />
       </Routes>
     </div>
   );

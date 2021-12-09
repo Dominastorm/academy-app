@@ -98,14 +98,14 @@ const subData = [
 
 const unitData = [
   {
-    thumb: "avsumnmary.jpeg",
+    thumb: "avsummary.jpeg",
     heading: "AV Summary",
-    path: "avsumamary"
+    path: "/player.vimeo.com/video/445836711"
   },
   {
     thumb: "notes.jpeg",
     heading: "Notes",
-    path: "notes"
+    path: "notes  "
   },
   {
     thumb: "slides.jpeg",
@@ -114,4 +114,4 @@ const unitData = [
   }
 ]
 
-export { homeData, subData };
+export { homeData, subData, unitData };

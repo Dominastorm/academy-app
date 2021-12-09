@@ -8,7 +8,7 @@ import { subData } from "../components/data";
 const SubjectPage = (props) => {
   console.log(window.location.pathname);
   const [data] = subData.filter(obj => '/coursepage/'+obj.path === window.location.pathname);
-  const currPath = window.location.pathname.toString();
+  const currPath = window.location.pathname.slice(1);
   console.log(data);
   return (
     <div>
