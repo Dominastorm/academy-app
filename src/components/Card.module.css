@@ -1,26 +1,18 @@
-.Card {
+.Card { 
   display: flex;
-  background-color: #000000;
-  height: 300px;
-  width: 100%;
-  /* width:400px; */
-
+  background-color: #000000; 
+  height: 100%;
   /* max-width: 720px; */
   transition: all 0.3s;
   border-radius: 15px;
   /* animation: animate 0.5s; */
-  transition: all 1s;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   overflow: hidden;
 }
-.Card h2 {
-  display: inline-block;
-  position: relative;
-  
-}
+
 .Card:hover {
   opacity: 0.8;
 }
@@ -32,18 +24,13 @@
 .thumb {
   display: block;
   margin-top: 5px;
-  width: 100%;
   /* padding-top: 10px; */
-  padding-left: 5%;
-  padding-right: 5%;
-
-  /* width:100px; */
+  width: 90%;
   height: 200px;
-  max-height: 200px;
   /* max-width: 720px; */
   /* transition: all 0.3s; */
   object-fit: cover;
-  /* margin: 5% auto; */
+  margin: 5% auto;
   border-radius: 5px;
 }
 
@@ -54,9 +41,4 @@
 .subheading {
   margin-bottom: 15px;
   color: white;
-}
-@media only screen and (min-width: 768px) {
-  .Card {
-    width: 400px;
-  }
 }
