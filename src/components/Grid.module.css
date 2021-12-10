@@ -10,12 +10,25 @@
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 5px;
-
-    @media screen and (max-width: 768px) {
-   }
 }
 
+.grid h3 {
+    color: blue;
+    border-radius: 20px;
+    margin-left: 1220px;
+}
 
+.grid button {
+    color: #7d8597;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-left: 1000px;
+}
+
+.grid h4 {
+    color: #7d8597;
+    margin-left: 1300px;
+}
 
 .row {
     display: grid;

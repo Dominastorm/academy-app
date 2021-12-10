@@ -16,7 +16,7 @@ const homeData = [
     path: "coursepage",
   },
   {
-    thumb: "announcements.jpeg",
+    thumb: "announcements2.jpeg",
     heading: "Announcements",
     path: "coursepage",
   },

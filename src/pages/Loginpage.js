@@ -5,6 +5,8 @@ import Logo from "../components/Logo";
 import { baseUrl } from "../components/data";
 import { Link,Navigate } from "react-router-dom";
 
+
+
 const Loginpage = (props) => {
   const loginCookie=localStorage.getItem('loggedIn');
   
@@ -12,6 +14,7 @@ const Loginpage = (props) => {
   const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState("0");//0 is inital state 1 is incorrect password and 2 is succesfully logged in
   
+
   const usernameHandler = (event) => {
     setUsername(event.target.value);
   };
@@ -22,6 +25,7 @@ const Loginpage = (props) => {
 
   const signInHandler = async (event) => {
     event.preventDefault();
+
 
     try {
       const response = await fetch(`${baseUrl}/login`, {
@@ -37,6 +41,7 @@ const Loginpage = (props) => {
       const data = await response.json();
       if (response.status !== 401) {
         setLoggedIn("2");
+        localStorage.setItem("username", username);
         localStorage.setItem("loggedIn",true);
         
       } else {
@@ -70,7 +75,7 @@ const Loginpage = (props) => {
             onChange={passwordHandler}
           />
         </div>
-        {loggedIn==="1" && <p style={{color:"red"}}>Incorrect Username or password</p>}
+        {loggedIn==="1" && <p style={{color:"red"}}>Incorrect Username or password</p> }
         <button
           className={classes.signIn}
           onClick={signInHandler}
@@ -84,4 +89,6 @@ const Loginpage = (props) => {
   );
   
 };
+// console.log(user);
 export default Loginpage;
+// export {user};
